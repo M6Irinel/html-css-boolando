@@ -17,7 +17,7 @@ ul, ol, menu {
 }
 
 .structure {
-    max-width: 1378px;
+    max-width: 1418px;
     margin: 0 auto;
 }
 
@@ -25,12 +25,18 @@ ul, ol, menu {
 
 header {
     background-color: #ff6900;
+    box-shadow: 0 2px 3px #939393;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
 }
 
 header .structure {
     justify-content: space-between;
     align-items: center;
-    padding: 20px 0;
+    padding: 18px 20px;
 }
 
 .suitable {
@@ -50,10 +56,11 @@ header .structure {
 
 .logo img {
     height: 30px;
+    cursor: pointer;
 }
 
 .options {
-    gap: 10px;
+    gap: 4px;
 }
 
 .options img {
@@ -63,10 +70,14 @@ header .structure {
 
 /* main =============================================*/
 
+main {
+    padding-top: 50px;
+}
+
 main .structure {
     flex-wrap: wrap;
     gap: 24px;
-    padding: 60px 0;
+    padding: 60px 20px;
 }
 
 main img {
@@ -74,6 +85,7 @@ main img {
 }
 
 .card {
+    margin-top: 20px;
     width: calc((100% - 24px * 2) / 3);
 }
 
@@ -179,11 +191,11 @@ footer * {
 
 footer .structure {
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 30px 20px;
 }
 
 footer .structure .title {
-    margin-bottom: 10px;
+    margin-bottom: 8px;
 }
 
 .left .links {
@@ -192,6 +204,7 @@ footer .structure .title {
 
 .left .links a {
     text-decoration: none;
+    font-size: 13px;
 }
 
 .left .links a:hover {
@@ -202,9 +215,31 @@ footer .structure .title {
     gap: 6px;
 }
 
-.icons_media img {
-    filter: invert(1);
-    height: 20px;
-    width: 20px;
+.right .title{
+    font-size: 15px;
 }
 
+.icons_media img {
+    filter: invert(1);
+    height: 22px;
+    width: 22px;
+}
+
+/* media query */
+
+@media (max-width: 600px) {
+    .discount {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .heart {
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 30px;
+    }
+    .links {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
