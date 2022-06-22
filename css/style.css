@@ -21,7 +21,7 @@ ul, ol, menu {
     margin: 0 auto;
 }
 
-/* HEADER */
+/* HEADER ===========================================*/
 
 header {
     background-color: #ff6900;
@@ -44,6 +44,10 @@ header .structure {
     font-size: 17px;
 }
 
+.suitable a:hover {
+    text-decoration: underline;
+}
+
 .logo img {
     height: 30px;
 }
@@ -56,3 +60,151 @@ header .structure {
     filter: invert(1);
     height: 20px;
 }
+
+/* main =============================================*/
+
+main .structure {
+    flex-wrap: wrap;
+    gap: 24px;
+    padding: 60px 0;
+}
+
+main img {
+    width: 100%;
+}
+
+.card {
+    width: calc((100% - 24px * 2) / 3);
+}
+
+/* :hover card */
+.card .default {
+    display: block;
+}
+
+.card:hover {
+    cursor: pointer;
+}
+
+.card:hover .default {
+    display: none;
+}
+
+.card .hover {
+    display: none;
+}
+
+.card:hover .hover{
+    display: block;
+}
+
+.heart:hover {
+    color: #ff0000;
+    cursor: pointer;
+}
+
+.img {
+    position: relative;
+}
+
+.heart {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 50px;
+    font-size: 40px;
+}
+
+.discount {
+    position: absolute;
+    bottom: 45px;
+    left: 0;
+    gap: 4px;
+}
+
+.discount * {
+    padding: 4px 10px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.percentage {
+    background-color: #ff0000;
+}
+
+.sustainability {
+    background-color: #007900;
+}
+
+/* info */
+
+.type {
+    font-size: 14px;
+}
+
+.name {
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.price {
+    font-size: 14px;
+}
+
+.price_discount {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+.full_price {
+    text-decoration: line-through;
+}
+
+
+/* footer ===========================================*/
+
+footer {
+    background-color: #1a1a1a;
+}
+
+footer * {
+    color: #fff;
+}
+
+footer .structure {
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+footer .structure .title {
+    margin-bottom: 10px;
+}
+
+.left .links {
+    gap: 10px;
+}
+
+.left .links a {
+    text-decoration: none;
+}
+
+.left .links a:hover {
+    text-decoration: underline;
+}
+
+.icons_media {
+    gap: 6px;
+}
+
+.icons_media img {
+    filter: invert(1);
+    height: 20px;
+    width: 20px;
+}
+
